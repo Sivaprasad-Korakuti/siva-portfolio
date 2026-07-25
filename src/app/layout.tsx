@@ -38,6 +38,14 @@ export const metadata: Metadata = {
   description: "A digital Zen garden portfolio of Siva Prasad Korakuti, CSE student, GATE qualifier, and Cloud Architect.",
   keywords: ["Siva Prasad", "Zen Portfolio", "Systems Architect", "MITS", "GATE 2026"],
   authors: [{ name: "Siva Prasad Korakuti" }],
+  icons: {
+    icon: [
+      { url: "/profile.png", type: "image/png" },
+      { url: "/profile.jpg", type: "image/jpeg" },
+    ],
+    shortcut: "/profile.png",
+    apple: "/profile.png",
+  },
 };
 
 export default function RootLayout({
