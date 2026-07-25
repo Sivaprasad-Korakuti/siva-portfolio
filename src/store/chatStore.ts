@@ -5,6 +5,7 @@ export interface UserProject {
   description: string;
   techStack: string[];
   status: string;
+  github?: string;
 }
 
 export interface NavigationSuggestion {

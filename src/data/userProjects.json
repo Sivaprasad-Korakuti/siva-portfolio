@@ -1,0 +1,16 @@
+[
+  {
+    "projectName": "PharmoQR",
+    "description": "Pharmacy inventory system featuring QR-based instant code scanning for checkout, custom database structures, and secure session authentications.",
+    "techStack": ["React.js", "Node.js", "Express", "MongoDB", "JWT", "Mongoose"],
+    "status": "IN DEVELOPMENT",
+    "github": "https://github.com/sivaprasad-korakuti/PharmoQR"
+  },
+  {
+    "projectName": "Tech Arms",
+    "description": "Emergency response portal implementing persistent Web Socket connections for geospatial broadcasting and Gemini AI incident reporting.",
+    "techStack": ["MongoDB", "Express", "React", "Node", "Socket.io", "Gemini AI", "Nodemailer"],
+    "status": "ACTIVE",
+    "github": "https://github.com/sivaprasad-korakuti"
+  }
+]
