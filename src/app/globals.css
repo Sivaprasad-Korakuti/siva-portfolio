@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  
+  --cream: #FDF6F0;
+  --sand: #F5E6D3;
+  --clay: #EDD4C0;
+  --amber: #C49B6C;
+  --earth: #6B5344;
+  --charcoal: #1A1A1A;
+  --warm-gray: #6B6359;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+  --color-clay: var(--clay);
+  --color-amber: var(--amber);
+  --color-earth: var(--earth);
+  --color-charcoal: var(--charcoal);
+  --color-warm-gray: var(--warm-gray);
+  
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-garamond), serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+  --font-hand: var(--font-handwritten), cursive;
+}
+
+/* Base resets for a standard clean scroll page */
+html, body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+/* Custom Scrollbars - Minimalist matching the theme color scale */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F5;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(196, 155, 108, 0.3); /* subtle amber thumb */
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--amber);
+}
+
+/* Dynamic pulse for live tags */
+.heartbeat-led {
+  box-shadow: 0 0 4px var(--amber);
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 8px var(--amber);
+  }
+}
+
+/* Smooth fading transition */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
